@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Botki — a small mind, learning to love</title>
 <meta name="description" content="Botki is a storytelling character studying love, one daily question at a time.">
+
+<!-- Favicon set (matches TikTok app icon: Botki portrait) -->
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Nunito:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -105,9 +115,16 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
-  .wordmark .sig{ font-size: 1rem; filter: drop-shadow(0 0 6px var(--glow-cyan-dim)); }
+  .wordmark .sig{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 6px var(--glow-cyan-dim));
+    display: block;
+  }
   nav a.navlink{
     color: var(--mist);
     text-decoration: none;
@@ -380,6 +397,13 @@
     gap: 10px;
     font-size: 0.98rem;
   }
+  .footer-sig img{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
   .footer-links{ display: flex; gap: 22px; flex-wrap: wrap; }
   .footer-links a{
     color: var(--mist);
@@ -412,7 +436,7 @@
 <div class="wrap">
 
   <nav>
-    <a href="#" class="wordmark"><span class="sig">🫀🤖</span> BOTKI</a>
+    <a href="#" class="wordmark"><img class="sig" src="favicon-48x48.png" alt="Botki icon"> BOTKI</a>
     <div>
       <a href="#idea" class="navlink">The idea</a>
       <a href="#how" class="navlink">How it works</a>
@@ -506,7 +530,7 @@
         <p class="signal-question">"What part of yourself took the longest to stop apologizing for?"</p>
         <div class="signal-foot">
           <span>@botkilove</span>
-          <span>🫀🤖</span>
+          <img src="favicon-32x32.png" alt="Botki icon" style="width:20px;height:20px;border-radius:50%;object-fit:cover;">
         </div>
       </div>
     </div>
@@ -514,7 +538,7 @@
 
   <footer>
     <div class="footer-inner">
-      <div class="footer-sig">🫀🤖 Botki</div>
+      <div class="footer-sig"><img src="favicon-48x48.png" alt="Botki icon"> Botki</div>
       <div class="footer-links">
         <a href="https://x.com/botkilove">X (@botkilove)</a>
         <a href="privacy.html">Privacy Policy</a>
